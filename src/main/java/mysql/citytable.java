@@ -1,3 +1,5 @@
+package mysql;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -13,7 +15,7 @@ public class citytable {
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/yyq", "thinkpad", "");
         statement = connection.createStatement();
 
-        // ÇåÀí±í
+        // ï¿½ï¿½ï¿½ï¿½ï¿½
         statement.executeUpdate("truncate table city");
         
         String sql1 = String.format("insert into city(ID,cname)"+"values(1,'London')");

@@ -1,4 +1,4 @@
-package maprecue;
+package mapreduce;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
